@@ -1,0 +1,12 @@
+{
+    "left_key": "f",
+    "right_key": "g",
+    "delay_left": 0.048,
+    "delay_right": 0.02,
+    "randomizationLeft": "n",
+    "randomizationRight": "n",
+    "randomizationLeft-starting_range": "2",
+    "randomizationLeft-ending_range": "12",
+    "randomizationRight-starting_range": "2",
+    "randomizationRight-ending_range": "12"
+}
