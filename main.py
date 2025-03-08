@@ -46,7 +46,7 @@ def premade_configs():
         update_json_value("configuration/config.json", bedrock_bw_rstartingRange[0], bedrock_bw_rstartingRange[1])
         update_json_value("configuration/config.json", bedrock_bw_rendingRange[0], bedrock_bw_rendingRange[1])
     else:
-        print("Invalid option, continuing in 3 seconds.")
+        print("continuing in 3 seconds.")
         time.sleep(3)
  
 premade_configs()
