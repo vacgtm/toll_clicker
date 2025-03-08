@@ -13,41 +13,7 @@ import os
 from colorama import Fore, init
 import time
 
-### Config Shit (Community/Premade) ###
-def premade_configs():
-    ### Config 1 (Bedrock Bedwars/Skywars) ###
-    bedrock_bw_leftkey = ("left_key", "f")
-    bedrock_bw_rightkey = ("right_key", "g")
-    bedrock_bw_delayleft = ("delay_left", "0.048")
-    bedrock_bw_delayright = ("delay_right", "0.2")
-    bedrock_bw_randomizationLeft = ("randomizationLeft", "n")
-    bedrock_bw_randomizationRight = ("randomizationRight", "n")
-    bedrock_bw_lstartingRange = ("randomizationLeft-starting_range", "2")
-    bedrock_bw_rstartingRange = ("randomizationRight-starting_range", "2")
-    bedrock_bw_lendingRange = ("randomizationLeft-ending_range", "12")
-    bedrock_bw_rendingRange = ("randomizationRight-ending_range", "12")
 
-
-    ### Config 2 ###
-    # HERE #
-    os.system("cls")
-    print("--Configs--\nConfig 1: |Bedrock Bedwars/Skywars|\n\n")
-    pick_cfg = input("> ")
-    if pick_cfg == "1":
-        update_json_value("configuration/config.json", bedrock_bw_leftkey[0], bedrock_bw_leftkey[1])
-        update_json_value("configuration/config.json", bedrock_bw_rightkey[0], bedrock_bw_rightkey[1])
-        update_json_value("configuration/config.json", bedrock_bw_delayleft[0], bedrock_bw_delayleft[1])
-        update_json_value("configuration/config.json", bedrock_bw_delayright[0], bedrock_bw_delayright[1])
-        update_json_value("configuration/config.json", bedrock_bw_randomizationLeft[0], bedrock_bw_randomizationRight[1])
-        update_json_value("configuration/config.json", bedrock_bw_lstartingRange[0], bedrock_bw_lstartingRange[1])
-        update_json_value("configuration/config.json", bedrock_bw_lendingRange[0], bedrock_bw_lendingRange[1])
-        update_json_value("configuration/config.json", bedrock_bw_rstartingRange[0], bedrock_bw_rstartingRange[1])
-        update_json_value("configuration/config.json", bedrock_bw_rendingRange[0], bedrock_bw_rendingRange[1])
-    else:
-        print("Invalid option, continuing in 3 seconds.")
-        time.sleep(3)
-
-premade_configs()
 
 init()
 
