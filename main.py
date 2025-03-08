@@ -21,7 +21,7 @@ def premade_configs():
     bedrock_bw_leftkey = ("left_key", "f")
     bedrock_bw_rightkey = ("right_key", "g")
     bedrock_bw_delayleft = ("delay_left", "0.048")
-    bedrock_bw_delayright = ("delay_right", "0.2")
+    bedrock_bw_delayright = ("delay_right", "0.02")
     bedrock_bw_randomizationLeft = ("randomizationLeft", "n")
     bedrock_bw_randomizationRight = ("randomizationRight", "n")
     bedrock_bw_lstartingRange = ("randomizationLeft-starting_range", "2")
@@ -83,6 +83,7 @@ async def clicker():
             rand_rngstart = read_json("configuration/config.json", "randomizationLeft-starting_range")
             rand_rngend = read_json("configuration/config.json", "randomizationLeft-ending_range")
             rand_val = random.randrange(int(rand_rngstart), int(rand_rngend))
+            mouse.click(button=Button.left)
             mouse.click(button=Button.left)
             await asyncio.sleep(rand_val / 100)
             
